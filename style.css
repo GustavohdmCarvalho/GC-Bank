@@ -1,0 +1,226 @@
+/* Configuração Padrão de início */
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: black; /* Cor de fundo do Header */
+    padding: 30px; /* Ajustamos o tamanho do preenchimento */
+    display: flex; /* Coloca os itens lado a lado, e "ativa" algumas opções como margin */
+    justify-content: space-between; /* coloca um espaço entre os conteúdos */
+}
+
+.menu-header {
+    display: flex; /* Usamos para jogar os intens lado a lado */
+    flex-wrap: wrap; /* Usado para habilitar a quebra em telas menores */
+    margin-top: 70px; /* Distancia itens do header de cima */
+}
+
+header > a > img {
+    width: 10rem; /* Aumenta o tamanho (largura) da imagem */
+    height: 9rem; /* Aumenta o tamanho (altura) da imagem */
+    margin-top: 10px; /* Distancia a imagem da margem superior da pagina */
+    margin-left: 20px; /* ''                     ''   esquerda da pagina */
+}
+
+.menu-header > li > a {
+    color: white; /* Alteração da cor da letra */
+    text-decoration: none; /* Desabilitando a decoração no texto (sublinhado) */
+    font-size: 15px; /* Tamanho da fonte */
+    padding: 10px; /* Area de preenchimento */
+    margin-bottom: 2rem;
+}
+
+.menu-header > li > a:hover { /* Chamamos a Tag "a" para estilização ao passar o mouse */
+    transition-duration: 0.8s; /* Tempo de transição para o efeito */
+    color: #1d84ec; /* Habilitando a cor que será habilitada */
+    /* font-size: 20px; Aumenta a fonte da mesma forma que a cor atua */
+}
+
+.menu-header > li { /* Chamamos nossa Li diretamente para espaça-las */
+    margin-left: 20px;/* Margem a esquerda para espaçamento */
+    
+}
+
+#sessao {
+    padding: 12rem; /* Área de preenchimento da 1º sessão */
+    background: linear-gradient(180deg, #1d84ec 8.33%, rgb(80, 80, 80) 100%); /* Degrade de fundo */
+}
+
+#sessao > h1 {
+    font-size: 45px; /* Aumenta a fonte do Titulo (h1) */
+    color: #063caa; /* Cor da Fonte */
+}
+
+#sessao > p {
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+#sessao > a > button { /* Chamando o button para aplicar as mudanças */
+    padding: 20px; /* Area de Preenchimento do Button em PX */
+    border-radius: 50px; /* Arredondamento das bordas do button */
+    width: 20rem; /* Tamanho do Button */
+    color: #1d84ec; /* Cor do texto digitado no button */
+    border-color: #063caa; /* Cor da borda do button */
+    margin: 30px; /* Tamanho da margem do button */
+    font-size: 15px; /* Tamanho da fonte do button */
+}
+
+#sessao > a > button:hover { /* Estilização do button */
+    background-color: #063caa; /* cor de fundo do button */
+    color: white; /* Cor da letra do button */
+    border-color: #063caa; /* Cor da borda do button */
+    transition: 0.8s; /* Tempo que leva até chegar ao final da estilização */
+}
+
+#app {
+    padding: 30vh; /* Preenchimento da section */
+    background-color: #505050; /* Cor de fundo da Section */
+    display: flex; /* Jogando os itens lado a lado */
+    justify-content: space-between; /* Justificando o conteúdo espaçamento inicial ao final */
+    flex-wrap: wrap; /* Adaptando a sessão para quebrar em telas menores */
+}
+
+#app > div > a > button {
+    padding: 20px; /* Preenchimento do nosso botão */
+    border-radius: 50px; /* Arredondamento das bordas */
+    width: 20vw; /* Ajustamos a largura do botão */
+    color: #1d84ec; /* Cor da letra */
+    border-color: #063caa; /* Cor da borda do button */
+    margin: 30px; /* Alteração das margens em volta do button */
+    font-size: 15px; /* Tamanho da letra que está dentro do button */
+}
+
+#app > div > p {
+    font-size: 35px; /* Tamanho da fonte do paragrafo */
+    color: white;
+}
+
+#app > div > a > button:hover {
+    background-color: #063caa; /* Alteramos a cor do fundo ao passar o mouse */
+    color: white; /* Cor da letra em questão */
+    border-color: #1d84ec; /* Cor da borda */
+    transition: 0.8s; /* tempo de transição ao passar o mouse */
+}
+
+#app > div > img { /* Aqui chamamos nossa img para estilizar */
+    width: 22vw; /* Largura da imagem usando Viewport */
+    height: 50vh; /* Altura da imagem usando o Viewport */
+    margin-top: -70px; /* Espaçamento da margem superior */
+}
+
+#container {
+    padding: 30vh; /* Preenchimento da section em questão */
+    background-color: #505050; /* Cor de fundo da section */
+    
+}
+
+#container > h2 { /* Chamamos nosso h2 para alteração */
+    font-size: 40px; /* Atribuimos um tamanho a letra */
+    margin-top: -20rem; /* Espaçamento superior usando (-) */
+    color: #063caa; /* Cor da letra */
+    text-align: center; /* Tornando o texto justificavel */
+}
+
+#container > .text1 {
+    text-align: center;
+}
+
+#container > p { /* Aqui chamamos nossa Tag P */
+    font-size: 20px; /* Tamanho da letra */
+    margin-top: 30px; /* Espaçamento superior */
+    color: rgba(255, 255, 255, 0.697); /* Cor da letra */
+    text-align: justify; /* Tornando o texto justificavel */
+}
+
+#container > a > button { /* Aqui estamos chamando nos Button para estilização */
+    padding: 20px; /* Tamanho do preenchimento */
+    border-radius: 50px; /* Arredondamento do button */
+    width: 15vw; /* Tamanho do button */
+    color: #1d84ec; /* Cor da letra */
+    border-color: #063caa; /* Cor da borda */
+    margin: 60px; /* Margem externa */
+    font-size: 15px; /* Tamanho da letra */
+}
+
+#container > a > button:hover {
+    background-color: #063caa;
+    color: white;
+    border-color: #1d84ec;
+    transition: 0.8s;
+}
+
+.line {
+    margin: 0 auto; /* Habilitando a linha a centro deixando as laterais Automáticas. Inferior e superior a 0. */
+    width: 70%; /* Largura da linha */
+}
+
+#container > img { /* Chamamos nossa Img da Section para estilização */
+    width: 20vw; /* Largura da imagem */
+    margin-top: 20px; /* Espaçamento para cima */ 
+    display: flex;  /* Coloca os itens lado a lado, e "ativa" algumas opções como margin */
+    margin-left: 25vw;  /* Coloca os itens lado a lado, e "ativa" algumas opções como margin */
+}
+
+#container-cadeado {
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101) 100%), url(IMGS/Seguranca.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container-cadeado > div > img {
+    width: 25vw;
+    margin-left: 20rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+#container-cadeado > div > p {
+    color: white;
+    font-size: 18px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#container-cadeado > div > h2 {
+    color: rgba(255, 255, 255, 0.800);
+    margin-left: 2rem;
+    margin-top: 10rem;
+}
+
+footer{
+    padding: 13vh;
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+}
+
+footer > img {
+    width: 20rem;
+    margin-top: -1rem;
+}
+
+.item-footer {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 11px;
+}
+
+.item-footer > a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.item-footer > a:hover {
+    transition: 0.8s;
+    color: #1d84ec;
+}/*  */
